@@ -1,0 +1,212 @@
+body{
+margin:0;
+font-family:Arial;
+background:linear-gradient(120deg,#7da9ff,#66d2ff);
+height:100vh;
+}
+
+.page{
+display:flex;
+justify-content:center;
+align-items:center;
+height:100vh;
+}
+
+.card{
+width:420px;
+background:white;
+border-radius:20px;
+padding:25px;
+box-shadow:0 10px 25px rgba(0,0,0,0.15);
+}
+
+.header{
+display:flex;
+justify-content:space-between;
+align-items:center;
+}
+
+.date{
+font-size:12px;
+color:#666;
+}
+
+.icons span{
+margin-left:10px;
+cursor:pointer;
+}
+
+.timer{
+margin-top:20px;
+padding:20px;
+border-radius:15px;
+border:1px solid #eee;
+text-align:center;
+}
+
+.timer h1{
+font-size:48px;
+color:#2f60ff;
+margin:0;
+}
+
+.timerButtons{
+margin-top:10px;
+}
+
+.start{
+background:#2f60ff;
+color:white;
+border:none;
+padding:8px 20px;
+border-radius:20px;
+margin-right:10px;
+}
+
+.timer button{
+border:1px solid #ccc;
+padding:8px 20px;
+border-radius:20px;
+cursor:pointer;
+}
+
+.progressBox{
+margin-top:20px;
+}
+
+.progressHeader{
+display:flex;
+justify-content:space-between;
+font-size:12px;
+margin-bottom:5px;
+}
+
+.progressBar{
+height:8px;
+background:#eee;
+border-radius:10px;
+}
+
+.progressFill{
+height:8px;
+background:#2f60ff;
+border-radius:10px;
+}
+
+.taskInput{
+display:flex;
+margin-top:20px;
+}
+
+.taskInput input{
+flex:1;
+padding:10px;
+border-radius:10px;
+border:1px solid #ddd;
+}
+
+.add{
+width:45px;
+margin-left:10px;
+background:#2f60ff;
+color:white;
+border:none;
+border-radius:50%;
+font-size:20px;
+cursor:pointer;
+}
+
+.filters{
+display:flex;
+gap:10px;
+font-size:13px;
+margin-top:15px;
+}
+
+.filters span{
+cursor:pointer;
+color:#666;
+}
+
+.filters .active{
+color:black;
+font-weight:bold;
+border-bottom:2px solid black;
+}
+
+.taskList{
+margin-top:15px;
+list-style:none;
+padding:0;
+}
+
+.taskList li{
+display:flex;
+align-items:center;
+margin-bottom:10px;
+}
+
+.taskList input{
+margin-right:10px;
+}
+
+.done{
+text-decoration:line-through;
+color:#999;
+}
+.emptyState{
+  text-align:center;
+  padding:40px;
+  color:#666;
+}
+
+.emptyImage{
+  width:90px;
+  margin-bottom:10px;
+}
+
+.quickAdd{
+  margin-top:10px;
+  background:#3b82f6;
+  border:none;
+  color:white;
+  padding:10px 20px;
+  border-radius:20px;
+  cursor:pointer;
+}
+.filters{
+  display:flex;
+  gap:18px;
+  margin-top:10px;
+  font-size:14px;
+  cursor:pointer;
+}
+
+
+.activeFilter{
+  border-bottom:3px solid #2563eb;
+  color:#2563eb;
+  font-weight:600;
+}
+
+.runningBtn{
+  background:#2563eb;
+  color:white;
+}
+
+.progressBar{
+  height:8px;
+  background:#ddd;
+  border-radius:10px;
+}
+
+.progressFill{
+  height:8px;
+  background:#2563eb;
+  border-radius:10px;
+}
+
+.emptyState{
+  text-align:center;
+  margin:20px 0;
+}
