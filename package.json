@@ -3,7 +3,7 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://Padmavineela123.github.io/taskmaker-react",
+  "homepage": "https://padmavineela123.github.io/todo-list",
   "scripts": {
     "dev": "vite",
     "build": "vite build",

@@ -3,7 +3,7 @@ import react, { reactCompilerPreset } from '@vitejs/plugin-react'
 import babel from '@rolldown/plugin-babel'
 
 export default defineConfig({
-  base: '/taskmaker-react/',
+  base: '/todo-list/',
   plugins: [
     react(),
     babel({ presets: [reactCompilerPreset()] })
