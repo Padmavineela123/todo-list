@@ -104,6 +104,12 @@ export default function App() {
     );
   }
 
+  /* ---------------- DELETE TASK ---------------- */
+
+  function deleteTask(id){
+    setTasks(tasks.filter(task => task.id !== id));
+  }
+
   /* ---------------- FILTER ---------------- */
 
   const today=new Date().toISOString().split("T")[0];
@@ -160,7 +166,6 @@ export default function App() {
 
         </header>
 
-
         {/* TIMER */}
 
         <div className="timer">
@@ -188,7 +193,6 @@ export default function App() {
 
         </div>
 
-
         {/* PROGRESS */}
 
         <div className="progressBox">
@@ -209,7 +213,6 @@ export default function App() {
 
         </div>
 
-
         {/* TASK INPUT */}
 
         <div className="taskInput">
@@ -225,7 +228,6 @@ export default function App() {
           </button>
 
         </div>
-
 
         {/* FILTERS */}
 
@@ -268,7 +270,6 @@ export default function App() {
 
         </div>
 
-
         {/* CONFETTI MESSAGE */}
 
         {allCompleted && (
@@ -286,7 +287,6 @@ export default function App() {
           </div>
 
         )}
-
 
         {/* TASK LIST */}
 
@@ -312,6 +312,13 @@ export default function App() {
               </span>
 
               {task.priority==="high" && "🔥"}
+
+              <button
+                onClick={()=>deleteTask(task.id)}
+                style={{marginLeft:"10px"}}
+              >
+                🗑
+              </button>
 
             </li>
 
